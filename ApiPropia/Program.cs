@@ -17,7 +17,8 @@ namespace ApiPropia
 
             //Conexion Total, Base de datos
             builder.Services.AddDbContext<ApiPropiaDbContext>(options
-                    => options.UseSqlServer("Default"));   
+                    => options.UseSqlServer("name=Default"));  
+            
 
             var app = builder.Build();
 
