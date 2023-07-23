@@ -3,6 +3,7 @@ using ApiPropia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiPropia.Migrations
 {
     [DbContext(typeof(ApiPropiaDbContext))]
-    partial class ApiPropiaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230723220551_ConfiguracionTablaProducto")]
+    partial class ConfiguracionTablaProducto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

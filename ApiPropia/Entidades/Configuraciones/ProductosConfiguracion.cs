@@ -8,7 +8,7 @@ namespace ApiPropia.Entidades.Configuraciones
         public void Configure(EntityTypeBuilder<Productos> builder)
         {
             builder.Property(producto => producto.Nombre).HasMaxLength(25);
-            builder.Property(producto => producto.Stock).HasPrecision(300);
+            builder.Property(producto => producto.Stock).HasPrecision(5,0);
 
         }
     }
