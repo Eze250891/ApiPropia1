@@ -18,7 +18,8 @@ namespace ApiPropia
             //Conexion Total, Base de datos
             builder.Services.AddDbContext<ApiPropiaDbContext>(options
                     => options.UseSqlServer("name=Default"));  
-            
+
+            builder.Services.AddAutoMapper(typeof(Program)); //significa que va a mapear todo lo que este dentro del proyecto
 
             var app = builder.Build();
 
